@@ -4,50 +4,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Frontend Mentor Challenge || Results summary component. By Geovanni Fernández">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
+
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;500;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
 
-  Your Result
-  76
-  of 100
+  <!-- RESULTS SUMMARY COMPONENT-->
+  <div class="summary-card">
+    <div class="summary-card__description">
+      <h1 class="summary-card__title summary-card__title--description">Your Result</h1>
+      <div class="summary-card__score-container">
+        <p class="summary-card__score">76 <span>of 100</span></p>
+      </div>
+      <p class="summary-card__rank">Great</p>
+      <p class="summary-card__text"> You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+    <div class="summary-card__summary">
+      <h2 class="summary-card__title summary-card__title--summary">Summary</h2>
+      <div class="summary-card__categories">
+        <div class="category category--reaction">
+          <h3 class="category__title">Reaction</h3>
+          <p class="category__score">80 <span>/ 100</span></p>
+        </div>
+        <div class="category category--memory">
+          <h3 class="category__title">Memory</h3>
+          <p class="category__score">92 <span>/ 100</span></p>
+        </div>
+        <div class="category category--verbal">
+          <h3 class="category__title">Verbal</h3>
+          <p class="category__score">61 <span>/ 100</span></p>
+        </div>
+        <div class="category category--visual">
+          <h3 class="category__title">Visual</h3>
+          <p class="category__score">72 <span>/ 100</span></p>
+        </div>
+      </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
+      <a href="#" class="summary-card__btn">Continue</a>
+    </div>
+  </div>
+  <!-- RESULTS SUMMARY COMPONENT-->
 
   <div class="attribution">
     <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span>
