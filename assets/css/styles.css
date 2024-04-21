@@ -277,3 +277,10 @@ h2 {
   width: 100%;
   padding: 1.5rem 2rem;
 }
+.summary-card__btn:active {
+  background: linear-gradient(
+    to bottom,
+    var(--light-slate-blue) -30%,
+    var(--light-royal-blue) 95%
+  );
+}
